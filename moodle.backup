@@ -33159,6 +33159,8 @@ COPY public.mdl_logstore_standard_log (id, eventname, component, action, target,
 2500	\\core\\event\\enrol_instance_deleted	core	deleted	enrol_instance	enrol	3	d	0	23	50	2	2	2	\N	0	a:1:{s:5:"enrol";s:4:"self";}	1540925580	web	192.168.163.112	\N
 2501	\\core\\event\\course_content_deleted	core	deleted	course_content	course	2	d	1	23	50	2	2	2	\N	0	a:3:{s:9:"shortname";s:2:"IO";s:8:"fullname";s:26:"Introdução a Operações";s:7:"options";a:0:{}}	1540925580	web	192.168.163.112	\N
 2502	\\core\\event\\course_deleted	core	deleted	course	course	2	d	1	23	50	2	2	2	\N	0	a:3:{s:9:"shortname";s:2:"IO";s:8:"fullname";s:26:"Introdução a Operações";s:8:"idnumber";s:0:"";}	1540925580	web	192.168.163.112	\N
+2503	\\core\\event\\dashboard_viewed	core	viewed	dashboard	\N	\N	r	0	5	30	2	2	0	2	0	N;	1540926357	web	192.168.163.112	\N
+2504	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	2	1	\N	0	N;	1540926358	web	192.168.163.112	\N
 \.
 
 
@@ -35740,7 +35742,7 @@ COPY public.mdl_sessions (id, state, sid, userid, sessdata, timecreated, timemod
 35	0	kf7i7on1ke6o2cqshklen48fkc	2	\N	1540498303	1540498721	192.168.163.112	192.168.163.112
 80	0	6fncogggsji0vlmqimvj8bia3b	2	\N	1540907253	1540907254	192.168.163.142	192.168.163.142
 79	0	9b5cl1lp9nd6d313d6lo3pskkd	0	\N	1540907182	1540909195	192.168.163.112	192.168.163.112
-82	0	03j6h0msbrergodvsmtuf2qruc	2	\N	1540925501	1540925581	192.168.163.112	192.168.163.112
+82	0	03j6h0msbrergodvsmtuf2qruc	2	\N	1540925501	1540926353	192.168.163.112	192.168.163.112
 \.
 
 
@@ -37556,7 +37558,7 @@ COPY public.mdl_user (id, auth, confirmed, policyagreed, deleted, suspended, mne
 83	manual	1	0	0	0	1	marcos.dias	restored		Marcos	Dias	marcos.dias@nexxera.com	0						5283							pt_br	gregorian		99	1539631355	1539794038	1539720737	1539793125	192.168.162.130		0		\N	1	1	0	2	1	0	1539631355	1539631355	0	\N	\N	\N	\N	\N
 84	manual	1	0	0	0	1	denis.silveira	restored		Denis	Silveira	denis.silveira@nexxera.com	0						5282							pt_br	gregorian		99	1539633550	1539795303	1539691734	1539795303	192.168.162.173		0		\N	1	1	0	2	1	0	1539633550	1539633550	0	\N	\N	\N	\N	\N
 31	manual	1	0	0	0	1	daniele.raupp	$2y$10$nXXosAzoy3HVjXPR9XMuB.TSfkfKQLFw2d/IRXP5JYOQ6AJQDj5gS		Daniele	Santos Raupp	daniele.raupp@nexxera.com	0						5536							pt_br	gregorian		99	1454674302	1540554827	1540498363	1540554827	192.168.163.143		0			1	1	0	2	1	0	1454674302	1540498344	0					
-2	manual	1	0	0	0	1	admin	$2y$10$QqYo.VkyTeDt6/ZDmZJEd.fGt7cAAqxjHpTYLpRrbxRsaRVuNos9u		Administrador	Usuário	sistemasinternos@nexxera.com	0												BR	pt_br	gregorian		99	1540487726	1540925581	1540907253	1540925501	192.168.163.112		0			1	1	0	0	1	0	0	1540487761	0	\N				
+2	manual	1	0	0	0	1	admin	$2y$10$QqYo.VkyTeDt6/ZDmZJEd.fGt7cAAqxjHpTYLpRrbxRsaRVuNos9u		Administrador	Usuário	sistemasinternos@nexxera.com	0												BR	pt_br	gregorian		99	1540487726	1540926353	1540907253	1540925501	192.168.163.112		0			1	1	0	0	1	0	0	1540487761	0	\N				
 \.
 
 
@@ -39375,7 +39377,7 @@ SELECT pg_catalog.setval('public.mdl_log_queries_id_seq', 1, false);
 -- Name: mdl_logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: moodleuser
 --
 
-SELECT pg_catalog.setval('public.mdl_logstore_standard_log_id_seq', 2502, true);
+SELECT pg_catalog.setval('public.mdl_logstore_standard_log_id_seq', 2504, true);
 
 
 --
